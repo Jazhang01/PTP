@@ -1,2 +1,1 @@
-environment specs in yml. Also may need railrl-private, multiworld, and patrick's PTP environment (pybullet)
-
+May also need railrl-private, multiworld, and patrick's PTP environment (pybullet) besides yml environment
