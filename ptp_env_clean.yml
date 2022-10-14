@@ -1,0 +1,26 @@
+name: PTP
+channels:
+    - defaults
+    - pytorch
+dependencies:
+    - pip
+    - python<3.10  # due to collections.Mapping from rlkit
+    - pytorch==1.11.0  # due to brc GPUs
+    - torchvision==0.12.0  # due to brc GPUs
+    - torchaudio==0.11.0  # due to brc GPUs
+    - cudatoolkit=11.3  # due to brc GPUs
+    - pip:
+        - python-dateutil
+        - joblib
+        - absl-py
+        - pybullet
+        - pygame
+        - opencv-python
+        - gym==0.20.0  # due to multiworld (<0.22.0 also works, but I've only run scripts with 0.20.0)
+        - scipy
+        - scikit-video
+        - matplotlib
+        - gin-config
+        - pyyaml
+
+# Note: PTP "planning to practice" environment also requires packages not specified here that were manually installed: multiworld, Patrick's PTP environment, and railrl-private
